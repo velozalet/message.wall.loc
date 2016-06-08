@@ -27,4 +27,4 @@ Data for DB:
 
 
 
-- Cсылка на GitHub repository:
+- Cсылка на GitHub repository: https://github.com/velozalet/message.wall.loc
