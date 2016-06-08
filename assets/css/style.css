@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*____________for page login_with_facebook.php */
+div#login_button_in_fb {
+    text-align: center;
+    margin-top: 25%;
+}
+
+
+/*____________for page index.php */
+#user_data > span.hello_guest > a {
+    color:black;
+}
+div#block_info_user {
+    width: 100%;
+}
+div#user_data {
+    width: 30%;
+    float:right;
+    text-align: right;
+}
+h3.text-center {
+    clear: both;
+    margin-top: 5%;
+}
+span#log_out_user {
+    padding-right: 4px;
+}
+div#login_out_button_in_fb {
+    margin-top: -22px;
+    position: relative;
+    right: 55px;
+}
+
+div#user_data > span.user_true {
+    position: relative;
+    top: -10px;
+}
+
+#user_data > span:nth-child(1) > a {
+    text-decoration: none;
+}
+
+.section_1 {
+    text-align: center;
+}
+
+/*div#login_out_button_in_fb:first-child {*/
+    /**/
+/*}*/
+
+div#login_out_button_in_fb > .fb_iframe_widget {
+    /*margin-top: 50px !important;*/
+}
+
+
+#wrap_post {
+    display: inline-block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 100%;
+}
+.column2 {
+    border-left: 1px solid #ccc;
+}
+
+button.btn_comment {
+    background-color: #0f0f0f;
+    color: white;
+    border-radius: 6px;
+}
+button.btn_comment:hover,
+button.btn_comment:active,
+button.btn_comment:visited {
+    background-color: #0f0f0f;
+    color: white;
+}
+dd.post_datecreate.pull-right {
+    color: gray;
+}
+
+.myself_post {
+    background-color: rgba(37, 243, 207, 0.14);
+}
+
+
+/* for functional "change the chevron icon in the comment blocks when is blocks open/closed"
+    in /assets/js/main.js
+*/
+.fa-chevron-circle-down:before {
+    content: "\f13a" !important;
+}
+
+#wrap_comments {
+    display: inline-block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #FFFD9F;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 100%;
+}
+
+textarea.edit_textarea {
+    background-color: #FFFF0D;
+}
+
+
+/*----------------------------------------------------------------------
+    Functionality clicks on the button of comments to posts от CSS-3
+----------------------------------------------------------------------*/
+div[class^="blockcomment-"] {  /*blockcomment-1*/
+    width: 100%;
+    /*height: 100%;*/
+    overflow: hidden;
+}
+/* ...#my_checkbox-1 .................. .blockcomment-1 */
+input[id^="my_checkbox-"]:checked ~ div[class^="blockcomment-"] {  /* collapse block - div[class^="blockcomment-"] */
+    height: 100%;
+    background-color: rgba(226, 226, 225, 0.98);
+    border: 0 solid grey;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    /*outline: 1px solid black;*/
+
+    /* for: Chrome,Safari,Android */
+    -webkit-transition-property: height;
+    -webkit-transition-duration: 3s;
+    /* for: Opera */
+    -o-transition-property: height;
+    -o-transition-duration: 3s;
+    /* for: Firefox */
+    -moz-transition-property: height;
+    -moz-transition-duration: 3s;
+}
+input[id^="my_checkbox-"] ~ div[class^="blockcomment-"] {  /* uncollapse block - div[class^="blockcomment-"] */
+    height: 0;
+    background-color: rgba(226, 226, 225, 0.98);
+    /*outline: 1px solid black;*/
+
+    /* for: Chrome,Safari,Android */
+    -webkit-transition-property: height;
+    -webkit-transition-duration: 0s;
+    /* for: Opera */
+    -o-transition-property: height;
+    -o-transition-duration: 0s;
+    /* for: Firefox */
+    -moz-transition-property: height;
+    -moz-transition-duration: 0s;
+}
+label:hover {
+    cursor:pointer;
+}
+[id^="my_checkbox-"] {  /*#my_checkbox-1*/
+    display: none;
+}
+
+
+/*----------------------------------------------------------------------
+    For lift buttons "Down" &  "Up"
+----------------------------------------------------------------------*/
+/* For lift button "Down" */
+#down {
+    background: grey;
+    opacity: 0.2;
+    /* background: url(img/down.png) 0 0 no-repeat; */
+    color:#080808;
+    text-align: center;
+    background-size: cover;
+    position: absolute;  /*fixed*/
+    top: 10px;
+    z-index: 50;
+    height: 30px;
+    width: 91px;
+    left: 50%;
+    cursor: pointer;
+    margin-left: -45px;
+    padding-top: 8px;
+    border-radius: 10px;
+}
+#down:hover {
+    opacity: 1.0;
+    color: #000000;
+    font: bold 14px 'Arial';
+    background: gold;
+}
+
+/* For lift button "Up" */
+#up {
+    background: grey;
+    opacity: 0.2;
+    /* background: url(img/down.png) 0 0 no-repeat; */
+    color:#080808;
+    text-align: center;
+    background-size: cover;
+    position: absolute;  /*fixed*/
+    /* bottom: 0px;*/
+    z-index: 50;
+    height: 30px;
+    width: 91px;
+    left: 50%;
+    cursor: pointer;
+    margin-left: -45px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    border-radius: 10px;
+}
+#up:hover {
+    opacity: 1.0;
+    color: #000000;
+    font: bold 14px 'Arial';
+    background: gold;
+}
+

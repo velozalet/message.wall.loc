@@ -1,0 +1,30 @@
+___________App message.wal.loc is "Guest Book"
+
+Use:
+    - PDO driver for work with MySQL
+    - PHP OOP
+    - javaScript + jQuery
+    - CSS3
+    -HTML5
+
+Data for DB:
+    - Host: localhost
+    - Name of DB: message_wall
+    - Login to DB: message_wall
+    - Password to DB: 55555
+-------------------------------------------------
+
+- Авторизация в приложении через соц.сеть "Facebook".
+    Использован сервис авторизации Юзера "Facebook SDK for JavaScript" (https://developers.facebook.com/docs/facebook-login/web)
+    Facebook SDK for JavaScript. Implementation of the "Sign in with Facebook» for web applications using JavaScript SDK
+    Данные залогиненого Юзера хранятся в cookie приложения.Срок жизни до разлогинации или закрития клиетом браузера. При разлогиниции все cookie удаляются.
+
+- Не залогиненный Юзер не может добавлять посты(сообщения) в "Guest Book", но может просматривать все сообщения и комментарии к ним.
+
+- Свои собственные посты(сообщения) и свои собственные комментарии для удобства выделяются другим цветом .
+
+- Возможность редактировать свои собственные сообщения и свои собственные комментарии.
+
+
+
+- Cсылка на GitHub repository:
